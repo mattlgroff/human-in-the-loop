@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+.ReviewedMessages {
+  margin: 20px;
+  width: calc(100% - 40px);
+}
+
+.ReviewedMessages table {
+  width: 100%;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button-approve {
+  background-color: #4CAF50; /* Green */
+}
+
+.button-deny {
+  background-color: #f44336; /* Red */
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+@media (min-width: 768px) {
+  .App-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .App-header, .ReviewedMessages {
+    width: 50%;
+    min-height: 80vh;
+  }
+
+  .button {
+    font-size: 1.2em;
+  }
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+thead {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+}
+
+.status-approved {
+  color: #4CAF50; /* Green */
+  font-weight: bold;
+}
+
+.status-denied {
+  color: #f44336; /* Red */
+  font-weight: bold;
+}
